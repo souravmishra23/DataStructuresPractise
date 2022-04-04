@@ -5,7 +5,8 @@ public class BestTimeToBuyAndSellStock {
     static int min_index = 0;
 
     public static void main(String[] args) {
-        System.out.println(maxProfit(new int[]{7,1,5,3,6,4}));
+
+        System.out.println(maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
     }
 
     public static int maxProfit(int[] prices) {
@@ -48,11 +49,11 @@ public class BestTimeToBuyAndSellStock {
 
         if (prices == null || prices.length == 0) return 0;
 
-        for (int i = 0; i < prices.length; i++) {
-            if (prices[i] < min)
-                min = prices[i];
-            else if (prices[i] - min > max)
-                max = prices[i] - min;
+        for (int price : prices) {
+            if (price < min)
+                min = price;
+            else if (price - min > max)
+                max = price - min;
         }
         return max;
     }

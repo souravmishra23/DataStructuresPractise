@@ -3,8 +3,8 @@ package hackerrank.com.recursion;
 public class PermutationsOfString {
     public static void main(String[] args) {
         String s = "abc";
-        //printPermutn(s, "");
-        printPermutnOptimized(s.toCharArray(),0);
+        printPermutn(s, "");
+        //printPermutnOptimized(s.toCharArray(),0);
     }
 
     private static void printPermutn(String str, String ans) {

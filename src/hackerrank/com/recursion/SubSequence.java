@@ -2,7 +2,7 @@ package hackerrank.com.recursion;
 
 public class SubSequence {
     public static void main(String[] args) {
-      subSequence("","abc");
+      subSequence("","ahbgdc");
     }
     static void subSequence(String p,String up){
         if (up.isEmpty()){

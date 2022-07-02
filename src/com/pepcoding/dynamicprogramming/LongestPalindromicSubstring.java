@@ -11,6 +11,7 @@ public class LongestPalindromicSubstring {
         int start = 0;
         int end = 0;
         for (int gap = 0; gap < str.length(); gap++) {
+
             for (int i = 0, j = gap; j < dp.length; i++, j++) {
                 if (gap == 0) {
                     dp[i][j] = true;

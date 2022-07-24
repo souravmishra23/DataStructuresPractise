@@ -25,6 +25,7 @@ public class LengthOfLongestSubstringWithoutRepeating {
                 }else {
                     int potentialLength = i - j;
                     if (potentialLength > len) len = potentialLength;
+
                 }
             }
 
